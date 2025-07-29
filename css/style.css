@@ -4,3 +4,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Regole Generali */
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Regole Main */
+
+.row{
+    display: flex;
+    height: 100vh;
+}
+
+.small-section{
+    flex-basis: 230px;
+    background-color: #000000;
+}
+/* Small Section responsive */
+@media screen and (max-width:550px){
+    .small-section{
+        flex-basis: 50px;
+    }
+}
+
+.big-section{
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #272B35;
+}
+
+
+/* Regole Footer */
+
+footer{
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    color: white; 
+}

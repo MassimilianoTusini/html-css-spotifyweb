@@ -9,31 +9,171 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Regole Testi */
+
+h2{
+    padding: 5px 15px;
+    color: white;
+    font-size: 1rem;
+}
+
+.white{
+    color: white;   
+}
+
+h4{
+    color: white;
+    display: inline-block;
 }
 
 /* Regole Main */
 
 .row{
     display: flex;
-    height: 100vh;
+    height:calc(100vh - 100px) ;
 }
 
-.small-section{
-    flex-basis: 230px;
-    background-color: #000000;
-}
-/* Small Section responsive */
-@media screen and (max-width:550px){
-    .small-section{
-        flex-basis: 50px;
-    }
-}
+/* Regole Big Section */
 
 .big-section{
     flex-grow: 1;
     overflow: auto;
     background-color: #272B35;
 }
+
+/* Regole Small Section */
+
+.small-section{
+    flex-basis: 200px;
+    background-color: #000000;
+    color: #A3A3A3;
+    
+}
+
+.svg{
+    width: 1.8rem;
+    padding-right: 5px;
+}
+
+.logo{
+    width: 2rem;
+}
+
+.big-logo{
+    width: 8rem;
+    padding-bottom: 5px;
+}
+
+/* Regole liste Small Section */
+
+.small-section li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px; 
+}
+
+.small-section li a{
+    text-decoration: none;
+    color: #A3A3A3;    
+}
+
+.plus{
+    background-color: #A3A3A3;
+    color: #000000;
+    font-size: 2rem;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+
+.main-sidebar{
+    height: 90%;
+}
+
+/* Regole Footer Sidebar */
+
+.footer-sidebar{
+    padding-left: 15px; 
+    height: 10%;
+    padding-bottom: 10px;
+    
+}
+
+.download{
+    width: 1rem;
+    vertical-align: middle;
+}
+
+.footer-sidebar a{
+    text-decoration: none;
+    color: #A3A3A3;
+    margin-left: 5px;
+}
+hr{
+    margin: 10px 0;
+    width: 90%;
+    opacity: 0.7;
+}
+
+.profile{
+    background-color: #A3A3A3;
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Sidebar responsive */
+@media screen and (max-width:550px){
+    .small-section{
+        flex-basis: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .footer-sidebar{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+    
+    .hide{
+    display: none;
+    }
+}
+
+@media screen and (min-width:551px){
+    .logo{
+        display: none;
+    }
+
+    .small-section li{
+        justify-content: flex-start;
+    }
+    .border li{
+        border-left: 2px solid transparent;
+    }
+
+    .border li:nth-of-type(2){
+        border-color: #ADFF2E;
+    }
+}
+
+
+
 
 
 /* Regole Footer */
@@ -42,7 +182,7 @@ footer{
     height: 100px;
     position: fixed;
     bottom: 0;
-    width: 100%;
     background-color: #282828;
     color: white; 
+    width: 100%;
 }

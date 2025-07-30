@@ -25,10 +25,6 @@ h3{
     font-size: 0.8rem;
 }
 
-.white{
-    color: white;   
-}
-
 h4{
     color: white;
     display: inline-block;
@@ -117,7 +113,7 @@ section p{
     padding-bottom: 5px;
 }
 
-.main-nav a.evidence::after{
+.main-nav a.underline::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -195,6 +191,15 @@ figcaption{
 .svg{
     width: 1.8rem;
     padding-right: 5px;
+    cursor: pointer;
+}
+
+.opac{
+    opacity: 0.8;
+}
+
+.white{
+    color: white; 
 }
 
 .logo{
@@ -226,6 +231,7 @@ figcaption{
     font-size: 2rem;
     padding: 0 10px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 /* Regole Main Sidebar */
 
@@ -494,4 +500,33 @@ hr{
 
 .music-bar:hover .dot{
     display: block;
+}
+
+body a:hover{
+    color: white;
+}
+
+.plus:hover{
+    background-color: white;
+}
+
+.opac:hover{
+    opacity: 1;
+}
+
+.song-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa-heart:hover,
+.fa-folder:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.header-fixed a:hover{
+    transform: scale(1.2);
+    margin-right: 20px;
+    
 }

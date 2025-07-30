@@ -125,11 +125,25 @@ section p{
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;  
+    flex-wrap: wrap;
 }
 
 .card{
     width: calc((100% / 6) - (50px / 6));
+}
+
+/* Layout responsive */
+@media screen and (max-width:880px){
+    .card{
+        width: calc((100% / 4) - (50px / 6));
+    }
+}
+
+@media screen and (max-width:640px){
+    .card{
+        width: calc((100% / 2) - (50px / 6));
+    }
 }
 
 .card img{

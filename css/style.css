@@ -113,6 +113,20 @@ section p{
 .main-nav a{
     text-decoration: none;
     color: #A3A3A3;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.main-nav a.evidence::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 2px;
+    background-color: #ADFF2E;
+
 }
 
 #container{

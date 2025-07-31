@@ -19,7 +19,7 @@ ul{
 
 /* Regole Testi */
 
-h3{
+.playlist{
     padding: 5px 15px;
     color: white;
     font-size: 0.8rem;
@@ -28,6 +28,7 @@ h3{
 h4{
     color: white;
     display: inline-block;
+    cursor: pointer;
 }
 
 h2{
@@ -171,7 +172,6 @@ section p{
     border-radius: 50%;
     padding: 5px;
     display: none;
-    z-index: 1;
 }
 
 .img-container img{
@@ -189,7 +189,7 @@ section p{
     cursor: pointer;
 }
 
-.card h5{
+.card h3{
     font-size: 0.8rem;
     color: white; 
 }
@@ -224,6 +224,7 @@ section p{
 
 .logo{
     width: 2rem;
+    cursor: pointer;
 }
 
 .big-logo{
@@ -262,8 +263,6 @@ section p{
     max-height: calc(100vh - 400px);
     overflow-y: auto;
     padding-right: 8px;
-    position: sticky;
-
 }
 
 
@@ -309,6 +308,7 @@ hr{
     height: 1.2rem;
     vertical-align: middle;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 /* Sidebar responsive */
@@ -382,7 +382,7 @@ hr{
     margin: 0 12px;
 }
 
-.sinister{
+h5.sinister{
     color: white;
     font-size: 0.7rem;
 }

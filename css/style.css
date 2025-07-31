@@ -532,6 +532,9 @@ h5.sinister{
 body a:hover{
     color: white;
 }
+li:hover{
+    color: white;
+}
 
 .plus:hover{
     background-color: white;

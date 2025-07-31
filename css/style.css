@@ -183,7 +183,7 @@ section p{
     border-radius: 50%;
 }
 
-figcaption{
+.text-container{
     text-align: center;
     padding-top: 10px;
     cursor: pointer;
